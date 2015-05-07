@@ -1,0 +1,18 @@
+body, html {
+	height: 100%;
+    margin: 0;
+}
+body {
+	background-image: url(images/bg2.gif);
+	background-repeat: repeat-x;background-color:#b2b2b2;
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #000000;
+}
+
+#st2, #st3 {
+	display: none;
+}

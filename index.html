@@ -1,0 +1,159 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Your Personal Place</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/styles1.css" title="styles1" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="styles/styles2.css" title="styles2" media="screen" />
+
+    <!--Load jQuery-->
+    <script type='text/javascript' src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!--Load Bootstrap!-->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!--Load Angular-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
+    <script src="http://code.angularjs.org/1.0.4/angular-sanitize.min.js"></script>
+
+    <script type="text/javascript" src="js/styleswitch.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollto.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //append click event to the UL list anchor tag
+            $('#hero-slider ul a').click(function () {
+
+                //reset all the items
+                $('#hero-slider ul a').removeClass('active');
+
+                //set current item as active
+                $(this).addClass('active');
+
+                //scroll it to the right position
+                $('.mask').scrollTo($(this).attr('rel'), 300);
+
+                //disable click event
+                return false;
+
+            });
+
+        });
+    </script>
+
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery lightBox plugin -->
+
+    <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/jquery.lightbox-0.5.css" media="screen" />
+    <!-- /jQuery lightBox plugin -->
+
+    <!-- jQuery lightBox plugin -->
+    <script type="text/javascript">
+        $(function() {
+            $('#gallery a').lightBox();
+        });
+    </script>
+
+</head>
+<body>
+<form action="contact.php" method="get">
+    <div id="wrapper">
+        <div id="header">
+            <div id="skin">
+            <a href="serversideSwitch.html?style=style1" rel="styles1" class="styleswitch">
+                <img src="images/skin1.png" width="54" height="61" border="0" />
+            </a>
+            <a href="serversideSwitch.html?style=style2" rel="styles2" class="styleswitch">
+                <img src="images/skin2.png" width="56" height="61" border="0" />
+            </a>
+            </div>
+        </div>
+        <div id="content"><div id="hero-slider">
+            <ul>
+                <li><a href="#" rel="#panel-1" class="active home">Item 1</a></li>
+                <li><a href="#" rel="#panel-2" class="aboutus">Item 2</a></li>
+                <li><a href="#" rel="#panel-3" class="services">Item 3</a></li>
+                <li><a href="#" rel="#panel-4" class="gallery">Item 2</a></li>
+                <li><a href="#" rel="#panel-5" class="contact">Item 3</a></li>
+            </ul>
+            <div class="mask">
+                <div class="slider-body">
+                    <div class="panel" id="panel-1">
+                        <h1>Welcome to my Website!</h1><h2>Place a short introduction here </h2>
+                        <p><img src="images/pic01.jpg" alt="" width="251" height="213" class="rightimg" /><br />
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat 							nula facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdie. doming id quod. mazim placerat facer possim assum vel eum iriure dolor in hendrerit. </p>
+                    </div>
+                    <div class="panel" id="panel-2">
+                        <h1>Обръщение</h1><h2>Place a short introduction here </h2>
+                        <p><img src="images/pic02.jpg" alt="" width="251" height="213" class="rightimg" /><br />
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat 							nula facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdie. doming id quod. mazim placerat facer possim assum vel eum iriure dolor in hendrerit. </p>
+                    </div>
+                    <div class="panel" id="panel-3">
+                        <h1>Жълта роза</h1><h2>Place a short introduction here </h2>
+                        <p><img src="images/pic03.jpg" alt="" width="251" height="213" class="rightimg" /><br />
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat 							nula facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdie. doming id quod. mazim placerat facer possim assum vel eum iriure dolor in hendrerit. </p>
+                    </div>
+                    <div class="panel" id="panel-3">
+                        <h1>Дългото завръщане</h1><h2>Place a short introduction here </h2>
+                        <p><img src="images/pic03.jpg" alt="" width="251" height="213" class="rightimg" /><br />
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat 							nula facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdie. doming id quod. mazim placerat facer possim assum vel eum iriure dolor in hendrerit. </p>
+                    </div>
+                    <div class="panel" id="panel-3">
+                        <h1>Танго с дявола</h1><h2>Place a short introduction here </h2>
+                        <p><img src="images/pic03.jpg" alt="" width="251" height="213" class="rightimg" /><br />
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat 							nula facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdie. doming id quod. mazim placerat facer possim assum vel eum iriure dolor in hendrerit. </p>
+                    </div>
+                    <div class="panel" id="panel-4">
+                        <h1>Photo Gallery</h1><h2>Place a short introduction here </h2>
+                        <div id="gallery">
+                            <a href="images/image1.jpg"><img src="images/thumb_image1.jpg" width="80" height="80" alt="" /></a>
+                            <a href="images/image2.jpg"><img src="images/thumb_image2.jpg" width="80" height="80" alt="" /></a>
+                            <a href="images/image3.jpg"><img src="images/thumb_image3.jpg" width="80" height="80" alt="" /></a>
+                            <a href="images/image4.jpg"><img src="images/thumb_image4.jpg" width="80" height="80" alt="" /></a>
+                            <a href="images/image5.jpg"><img src="images/thumb_image5.jpg" width="80" height="80" alt="" /></a>
+                            <br />
+                            <a href="images/image6.jpg"><img src="images/thumb_image6.jpg" width="80" height="80" alt="" /></a>
+                            <a href="images/image7.jpg"><img src="images/thumb_image7.jpg" width="80" height="80" alt="" /></a>
+                            <a href="images/image8.jpg"><img src="images/thumb_image8.jpg" width="80" height="80" alt="" /></a>
+                            <a href="images/image9.jpg"><img src="images/thumb_image9.jpg" width="80" height="80" alt="" /></a>
+                            <a href="images/image10.jpg"><img src="images/thumb_image10.jpg" width="80" height="80" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="panel" id="panel-5">
+                        <h1>Keep in touch</h1><h2>Place a short introduction here </h2><br />
+
+                        <div style="width:270px; margin-right: 50px; margin-top:12px; float:left">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nula facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdie. doming id quod. mazim placerat facer possim assum vel eum iriure dolor in hendrerit. </div>
+                        <div id="contact"><span class="contactfield">Your Name</span> <br />
+                            <label>
+                                <input type="text" name="name" id="name" />
+                            </label>
+                            <br />
+                            <span class="contactfield">Your Email</span> <br />
+                            <label>
+                                <input type="text" name="email" id="email" />
+                            </label>
+                            <br />
+                            <label></label>
+                            <span class="contactfield">Your Message:</span><br />
+                            <label>
+                                <textarea name="message" wrap="virtual" id="message"></textarea>
+                                <br />
+                                <input type="image" src="images/send.gif">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .mask -->
+            <div class="clear"></div>
+        </div> <!-- #hero-slider -->
+        </div>
+        <div id="footer">Copyright © Your Company Name. All Rights Reserved.</div>
+    </div>
+</form>
+</body>
+</html>
