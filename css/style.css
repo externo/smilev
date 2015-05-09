@@ -679,20 +679,26 @@ body.home #wrapper{
 	line-height: 21px;
 }
 #quote {
-	text-align:center;
-	font-size:35px;
+	text-align: justify;
+	text-justify: inter-word;
+	font-size:15px;
 	color:#444;
 	padding:33px 40px;
 	margin-top: 30px;
-	background:url(images/left-quote.png) no-repeat 40px 33px;
+	/*background:url(images/left-quote.png) no-repeat 40px 33px;*/
 	text-shadow:0 1px 1px #FFF;
 }		
 #quote p {
-	line-height:40px;
+	line-height:20px;
 	padding:0 40px;
-	background:url(images/right-quote.png) no-repeat top right;
+	/*background:url(images/right-quote.png) no-repeat top right;*/
 	font-family: Georgia, 'Times New Roman', Utopia, Times, serif;
 	font-style: italic;
+}
+.floated{
+	float: left;
+	margin: 35px 35px 15px;
+	margin-left: 0;
 }
 #home-sections {
 	padding:60px 0;
@@ -1789,7 +1795,6 @@ textarea.input {
 	.service h3{width: 80%;}
 	.service.first { margin-left: 15px; }
 	
-	#quote { font-size: 30px; }
 	#quote, #home_sections {
 		padding-left: 39px;
 		padding-right: 39px;
@@ -1857,7 +1862,7 @@ textarea.input {
 		padding-left: 39px;
 		padding-right: 39px;
 	}
-	#quote { font-size: 25px; }
+
 	#recent-work {
 		width: auto;
 		padding-right: 0;
