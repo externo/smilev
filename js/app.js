@@ -1,7 +1,7 @@
 'use strict';
 
 var demoApp = angular.module('App', ['ngRoute']);
-demoApp.config(function ($routeProvider) {
+demoApp.config(function ($routeProvider, $locationProvider) {
     $routeProvider
         .when('/obrashtenie', {
             controller: '',
@@ -17,4 +17,7 @@ demoApp.config(function ($routeProvider) {
             templateUrl: 'templates/tango-s-dyavola.html'})
         .otherwise({
             redirectTo : '/obrashtenie'});
+
+    // use the HTML5 History API
+    //$locationProvider.html5Mode(true);
 });
